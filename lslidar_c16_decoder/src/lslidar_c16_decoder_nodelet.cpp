@@ -31,6 +31,5 @@ void LslidarC16DecoderNodelet::onInit() {
 
 } // end namespace lslidar_c16_decoder
 
-// Register this plugin with pluginlib.  Names must match nodelet_lslidar.xml.
-// parameters are: class type, base class type
-PLUGINLIB_EXPORT_CLASS(lslidar_c16_decoder::LslidarC16DecoderNodelet, nodelet::Nodelet);
+PLUGINLIB_DECLARE_CLASS(lslidar_c16_decoder, LslidarC16Nodelet,
+    lslidar_c16_decoder::LslidarC16DecoderNodelet, nodelet::Nodelet);
